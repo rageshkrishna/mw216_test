@@ -1,0 +1,12 @@
+language: ruby
+env:
+ - FOO="Running 1.8.6 as usual"
+rvm:
+ - 1.8.6
+install: true
+script: echo $FOO
+include:
+ - rvm: 2.0.0
+   env: FOO="Running 2.0.0 from include tag"
+ - rvm: 1.9.2
+   env: FOO="Running 1.9.2 from include tag"
