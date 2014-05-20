@@ -1,6 +1,6 @@
 language: ruby
 env:
- - FOO="Running 1.8.6 as usual"
+ - FOO="Running 1.9.3 as usual"
 rvm:
  - 1.9.3
 install: true
